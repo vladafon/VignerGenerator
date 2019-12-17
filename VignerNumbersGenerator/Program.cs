@@ -15,10 +15,10 @@ namespace VignerNumbersGenerator
 
             while (result.Count < 1000)
             {
-                double x = Convert(rand1.NextDouble(),0,1,4,12);
+                double x = Convert(rand1.NextDouble(),0,1,7.6,8.4);
                 double y = Convert(rand2.NextDouble(), 0, 1, 0, 2 / (Math.PI * 4));
 
-                double fx = (2/(Math.PI*16))*Math.Sqrt(16-(x-8)*(x-8));
+                double fx = (2/(Math.PI*16))*Math.Sqrt(0.16-(x-8)*(x-8));
 
                 if (y < fx)
                 {
